@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - The Keystone Series</title>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Leaderboard.css">
+</head>
+<body>
+    <header>
+        <br>
+        <br>
+        <h1>The Keystone Series</h1>
+        <br>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Profile-builder.html">Profile Builder</a></li>
+                <li><a href="Leaderboard.html" class="active">Leaderboard</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Profiles.html">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="leaderboard">
+            <h1>Super Smash Bros. Championship Leaderboard</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Win Rate</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>MKLeo</td>
+                        <td>85%</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tweek</td>
+                        <td>82%</td>
+                        <td>1950</td>
+                    </tr>
+                    <tr class="clickable-row" data-href="NairoStats.html">
+                            <td>3</td>
+                            <td>Nairo</td>
+                            <td>80%</td>
+                            <td>1900</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Dabuz</td>
+                        <td>78%</td>
+                        <td>1850</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Marss</td>
+                        <td>76%</td>
+                        <td>1800</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Glutonny</td>
+                        <td>75%</td>
+                        <td>1750</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Shuton</td>
+                        <td>74%</td>
+                        <td>1700</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Kola</td>
+                        <td>73%</td>
+                        <td>1650</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Raito</td>
+                        <td>72%</td>
+                        <td>1600</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Tea</td>
+                        <td>71%</td>
+                        <td>1550</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Zackray</td>
+                        <td>70%</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Esam</td>
+                        <td>68%</td>
+                        <td>1450</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Light</td>
+                        <td>67%</td>
+                        <td>1400</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Riddles</td>
+                        <td>66%</td>
+                        <td>1350</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Cosmos</td>
+                        <td>65%</td>
+                        <td>1300</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Salem</td>
+                        <td>64%</td>
+                        <td>1250</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Mr. R</td>
+                        <td>63%</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Void</td>
+                        <td>62%</td>
+                        <td>1150</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Wrath</td>
+                        <td>61%</td>
+                        <td>1100</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>ScAtt</td>
+                        <td>60%</td>
+                        <td>1050</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 The Keystone Series. All Rights Reserved.</p>
+            <nav class="footer-nav">
+                <a href="Terms.html">Terms of Service</a> |
+                <a href="Privacy.html">Privacy Policy</a> |
+                <a href="ContactUs.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.clickable-row').forEach(row => {
+            row.addEventListener('click', () => {
+                window.location.href = row.getAttribute('data-href');
+            });
+        });
+    </script>
+</body>
+</html>

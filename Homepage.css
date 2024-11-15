@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Passion One', sans-serif;
+    background: linear-gradient(120deg, #1e1e2f, #121212);
+    color: #fff;
+    animation: gradient 6s infinite;
+}
+
+/* Dynamic Gradient Animation */
+@keyframes gradient {
+    0% {
+        background: linear-gradient(120deg, #1e1e2f, #121212);
+    }
+    50% {
+        background: linear-gradient(120deg, #2b2b40, #1a1a1a);
+    }
+    100% {
+        background: linear-gradient(120deg, #1e1e2f, #121212);
+    }
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background: #000;
+    padding: 20px 0;
+    border-bottom: 2px solid #444;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px; /* Increased size for more emphasis */
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu Bar Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav a {
+    font-family: 'Passion One', sans-serif; /* Slanted and bold font for links */
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; /* Larger for more impact */
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+/* Highlight Animation */
+nav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Tournament Grid Styles */
+.tournament-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.tournament-card {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.tournament-card:hover {
+    transform: translateY(-5px);
+}
+
+.tournament-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.tournament-card h3 {
+    padding: 15px 0;
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #444;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}

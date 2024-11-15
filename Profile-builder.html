@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Profile-builder.css">
+</head>
+<body>
+    <header>
+        <br>
+        <br>
+        <h1>The Keystone Series</h1>
+        <br>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Tournaments.html">Tournaments</a></li>
+                <li><a href="Profiles.html">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="profile-builder">
+            <h1>Create Your Profile</h1>
+            <form action="#" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="realname">Real Name</label>
+                <input type="text" id="realname" name="realname" placeholder="Enter your real name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="game">Favorite Game</label>
+                <input type="text" id="game" name="game" placeholder="Enter your favorite game">
+
+                <label for="team">Team (if any)</label>
+                <input type="text" id="team" name="team" placeholder="Enter your team name">
+
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Write a short bio"></textarea>
+
+                <button type="submit">Submit Profile</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 The Keystone Series. All Rights Reserved.</p>
+            <nav class="footer-nav">
+                <a href="Terms.html">Terms of Service</a> |
+                <a href="Privacy.html">Privacy Policy</a> |
+                <a href="ContactUs.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
