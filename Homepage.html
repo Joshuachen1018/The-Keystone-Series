@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <title>The Keystone Series</title>
     <link rel="stylesheet" href="Homepage.css">
 </head>
@@ -16,99 +16,92 @@
         <br>
         <nav>
             <ul>
-                <li><a href="Profile-builder.html">Profile Builder</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
                 <li><a href="Tournaments.html">Tournaments</a></li>
-                <li><a href="Profiles.html">Profiles</a></li>
+                <li><a href="Profile-Builder.html">Profile Builder</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Profiles.html" class="active">Profiles</a></li>
             </ul>
+            <br>
         </nav>
     </header>
+
     <main>
-        <section class="tournament-grid">
-            <div class="tournament-card">
-                <a href="Leaderboard.html">
-                    <img src="images/smash_bros.jpg" alt="Super Smash Bros. Championship">
-                    <h3>Super Smash Bros. Championship</h3>
-                </a>
+        <!-- News Carousel -->
+        <section class="news-carousel">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="images/news1.jpg" alt="News 1">
+                    <div class="carousel-caption">
+                        <h2>Exciting New Tournament Announced: Join the Battle!</h2>
+                        <p>The Keystone Series unveils its latest tournament lineup. Get ready to compete with the best!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/news2.jpg" alt="News 2">
+                    <div class="carousel-caption">
+                        <h2>Player of the Year Revealed!</h2>
+                        <p>Congratulations to our 2024 Player of the Year, a true gaming legend in the Keystone Series.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/news3.jpg" alt="News 3">
+                    <div class="carousel-caption">
+                        <h2>New Sponsorship Deals Announced!</h2>
+                        <p>Exciting partnerships bring new prizes and opportunities for players in the upcoming season.</p>
+                    </div>
+                </div>
             </div>
-            <div class="tournament-card">
-                <img src="images/league_of_legends.jpg" alt="League of Legends Invitational">
-                <h3>League of Legends Invitational</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/dota2.jpg" alt="Dota 2 Pro League">
-                <h3>Dota 2 Pro League</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/overwatch.jpg" alt="Overwatch Open">
-                <h3>Overwatch Open</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/csgo.jpg" alt="CS:GO Global Offensive">
-                <h3>CS:GO Global Offensive</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/fortnite.jpg" alt="Fortnite Battle Royale">
-                <h3>Fortnite Battle Royale</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/valorant.jpg" alt="Valorant Masters">
-                <h3>Valorant Masters</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/rocket_league.jpg" alt="Rocket League Cup">
-                <h3>Rocket League Cup</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/apex_legends.jpg" alt="Apex Legends Showdown">
-                <h3>Apex Legends Showdown</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/cod_warzone.jpg" alt="Call of Duty: Warzone">
-                <h3>Call of Duty: Warzone</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/pubg.jpg" alt="PUBG Continental Series">
-                <h3>PUBG Continental Series</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/rainbow_six.jpg" alt="Rainbow Six Siege Major">
-                <h3>Rainbow Six Siege Major</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/hearthstone.jpg" alt="Hearthstone Grandmasters">
-                <h3>Hearthstone Grandmasters</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/starcraft2.jpg" alt="StarCraft II World Championship">
-                <h3>StarCraft II World Championship</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/fifa.jpg" alt="FIFA eWorld Cup">
-                <h3>FIFA eWorld Cup</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/madden.jpg" alt="Madden NFL Championship">
-                <h3>Madden NFL Championship</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/nba2k.jpg" alt="NBA 2K League">
-                <h3>NBA 2K League</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/street_fighter.jpg" alt="Street Fighter V Tournament">
-                <h3>Street Fighter V Tournament</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/tekken7.jpg" alt="Tekken 7 World Tour">
-                <h3>Tekken 7 World Tour</h3>
-            </div>
-            <div class="tournament-card">
-                <img src="images/mortal_kombat.jpg" alt="Mortal Kombat 11 Pro Kompetition">
-                <h3>Mortal Kombat 11 Pro Kompetition</h3>
+            <div class="carousel-controls">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
             </div>
         </section>
+
+        <!-- Main Content Area -->
+        <section class="content-area">
+            <!-- Leaderboard -->
+            <section class="leaderboard">
+                <h2>Leaderboard</h2>
+                <div class="leaderboard-table">
+                    <table>
+                        <tr><th>Rank</th><th>Player</th><th>Points</th></tr>
+                        <tr><td>1</td><td>PlayerX</td><td>2050</td></tr>
+                        <tr><td>2</td><td>ShadowMaster</td><td>1975</td></tr>
+                        <tr><td>3</td><td>PhoenixRising</td><td>1900</td></tr>
+                        <tr><td>4</td><td>ThunderStrike</td><td>1825</td></tr>
+                        <tr><td>5</td><td>DragonSlayer</td><td>1760</td></tr>
+                        <tr><td>6</td><td>SilentHunter</td><td>1700</td></tr>
+                        <tr><td>7</td><td>Firestorm</td><td>1650</td></tr>
+                        <tr><td>8</td><td>MysticKnight</td><td>1605</td></tr>
+                        <tr><td>9</td><td>LightningFury</td><td>1580</td></tr>
+                        <tr><td>10</td><td>WindDancer</td><td>1550</td></tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Sub-news Section -->
+            <aside class="sub-news">
+                <h3>Additional News</h3>
+                <div class="news-item">
+                    <h4>Top 10 Players to Watch This Season</h4>
+                    <p>The Keystone Series returns with top players expected to shine. From PlayerX’s strategic skills to ShadowMaster’s strong defense, these players are set to make a big impact. Watch to see who claims the top spots!</p>
+                </div>
+                <div class="news-item">
+                    <h4>Updated Leaderboard: See Who's Rising</h4>
+                    <p>Recent tournaments have shaken up the leaderboard. New faces like ThunderStrike and MysticKnight are climbing fast, while seasoned players fight to hold their ranks. Stay tuned for the latest shifts!</p>
+                </div>
+                <div class="news-item">
+                    <h4>Keystone Series Expands to New Regions</h4>
+                    <p>The Keystone Series is welcoming players from new regions, bringing fresh talent and unique strategies to the competition. This season promises intense global matchups!</p>
+                </div>
+                <div class="news-item">
+                    <h4>Major Rule Changes Announced</h4>
+                    <p>New rules this season include updates to match formats and scoring to encourage diverse playstyles. These changes may lead to surprising results—don’t miss out!</p>
+                </div>
+            </aside>
+        </section>
     </main>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 The Keystone Series. All Rights Reserved.</p>
@@ -119,5 +112,7 @@
             </nav>
         </div>
     </footer>
+
+    <script src="carousel.js"></script>
 </body>
 </html>

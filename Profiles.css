@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Passion One', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background: linear-gradient(120deg, #1e1e2f, #121212);
     color: #fff;
     animation: gradient 6s infinite;
@@ -59,7 +59,7 @@ nav li {
 }
 
 nav a {
-    font-family: 'Passion One', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
