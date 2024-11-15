@@ -96,6 +96,25 @@ nav a:hover::before, .active::before {
     transform-origin: left;
 }
 
+.profile-pic {
+    width: 70%; /* Make the image take the full width of the container */
+    height: 150px; /* Fixed height for consistent sizing */
+    object-fit: cover; /* Scale and crop the image to fill the space */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    display: block;
+}
+
+/* Profile Card Styling */
+.profile-card {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    overflow: hidden; /* Ensures image fits within rounded corners */
+}
 /* Profiles Section */
 .profiles-section {
     max-width: 1200px;
