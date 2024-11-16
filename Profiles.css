@@ -24,6 +24,17 @@ body {
         background: linear-gradient(120deg, #1e1e2f, #121212);
     }
 }
+/* Style for the clickable profile link */
+.profile-link {
+    display: block; /* Makes the entire card clickable */
+    text-decoration: none; /* Removes default link styling */
+    color: inherit; /* Ensures text color matches the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-link:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
 
 /* Header Styles */
 header {
