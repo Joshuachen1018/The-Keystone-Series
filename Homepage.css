@@ -23,7 +23,18 @@ header h1 {
     letter-spacing: 2px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+.logo-container {
+    position: absolute;
+    top: 30px; /* Adjust spacing from the top */
+    left: 30px; /* Adjust spacing from the left */
+    width: 100px; /* Set a fixed width for the logo container */
+}
 
+.logo {
+    width: 100%; /* Ensure it fills the container's width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 80px; /* Set a maximum size for the logo */
+}
 /* Menu Bar Styles */
 nav ul {
     list-style: none;
